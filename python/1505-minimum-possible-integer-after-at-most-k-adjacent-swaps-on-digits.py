@@ -37,3 +37,35 @@ class Solution:
                     break
             
         return ans
+
+# class Solution:
+#     def minInteger(self, num: str, k: int) -> str:
+#         arr = list(num)
+        
+#         ans = self.sol(arr, k)
+        
+        
+#         return "".join(ans)
+        
+#     def sol(self, arr, k):
+#         if k <= 0:
+#             return arr
+        
+#         if len(arr) == 0:
+#             return []
+        
+#         min_i = 0
+#         min_v = arr[0]
+        
+#         for i in range(1, min(k+1, len(arr))):
+#             if min_v == "0":
+#                 break
+#             if arr[i] < min_v:
+#                 min_i = i
+#                 min_v = arr[i]
+
+        
+#         remaining_k = k - min_i
+#         arr.pop(min_i)
+        
+#         return [min_v] + self.sol(arr, remaining_k)
